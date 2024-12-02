@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style_form.css">
+</head>
+
+<body>
+	<header>
+		<nav class="bar_nav">
+			<a href="#" class="icon">
+				<img src="iconos/cuidado-de-mascotas.png" alt="">
+				<h3>Mascotas</h3>
+			</a>
+			<ul class="men_nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li class="lista">
+					<a href="productos.html">Productos</a>
+					<ul class="sub-menu">
+						<li><a href="#">Alimentos</a></li>
+						<li><a href="#">Juguetes</a></li>
+						<li><a href="#">Accesorios</a></li>
+					</ul>
+				</li>
+				<li><a href="adopciones.html">Adopciones</a></li>
+				<li><a href="formulario.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="form">
+		<form action="#" method="post" class="campo_form" id="form_registro">
+			<h2>Formulario</h2>
+			<div class="entradas">
+				<label for="name">Nombre completo:</label><br>
+				<input type="text" id="name" name="name">
+
+			</div>
+			<div class="entradas">
+				<label for="email">Correo electrónico:</label><br>
+				<input type="email" id="email" name="email" required>
+			</div>
+			<div class="entradas">
+				<label for="phone">Número de teléfono:</label><br>
+				<input type="tel" id="phone" name="phone" required>
+
+			</div>
+			<div class="entradas">
+				<label for="phone">Direccion:</label><br>
+				<input type="text" id="direccion" name="direccion" required>
+			</div>
+			<div class="entradas">
+				<label for="edad">Edad:</label><br>
+				<input type="edad" id="edad" name="edad" required>
+			</div>
+
+			<div class="entradas">
+				<label for="genero">Genero:</label><br>
+				<select name="genero" id="genero">
+					<option value="Masculino">Masculino</option>
+					<option value="Femenino">Femenino</option>
+					<option value="Otro">Y otros 39 tipos de gay</option>
+				</select>
+			</div>
+			<div>
+				<label for="file">carga la foto de perfil:</label><br>
+				<input type="file" id="file" name="file" required>
+			</div>
+			
+			<div class="botones">
+                <input type="submit" value="Enviar" id="submit">
+            </div>
+			<div id="salida" class="salida">
+
+			</div>
+		</form>
+		<img class="img_perfil" src="imagenes/32800-m.jpg" alt="">
+		
+	</section>
+<script src="app.js"></script>
+</body>
+
+</html>

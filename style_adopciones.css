@@ -1,0 +1,246 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 90px 0 0 0;  
+
+}
+
+header .icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  header .icon img {
+    width: 50px;
+  }
+  
+  header .icon:hover {
+  
+    background-color: #095b0c;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .bar_nav {
+    background-color: #0b7c0e;
+    padding: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+  
+  }
+  
+  .men_nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 0.5em;
+  }
+  
+  .men_nav a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .men_nav a:hover {
+    background-color: #0b7c0e;
+    border-radius: 4px;
+    color: black;
+  }
+  
+  /* Estilo de Submenús */
+  .lista {
+    position: relative;
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    min-width: 120px;
+    top: 100%;
+    left: 0;
+    background-color: #0b7c0e;
+  
+  }
+
+  
+  .sub-menu li {
+    width: 100%;
+  }
+  
+  .sub-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+  }
+  
+  .sub-menu li a:hover {
+    background-color: #438f45;
+  }
+  
+  .lista:hover .sub-menu {
+    display: block;
+  }
+
+
+
+
+h2, h3 {
+    color: #01a91a;
+    text-align: center;
+    font-size: 40px;
+}
+h4{
+    color: #000000;
+    font-size: 30px;
+    margin-top: 20px;
+}
+section.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 100vw;
+    height: 70vh;
+    max-width: 90%;
+    margin: auto;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 25px 25px rgba(0, 0, 0, 1.5);
+}
+.item1 img {
+    box-shadow: 10px 25px 25px rgba(0, 0, 0, 2);
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+    
+}
+
+.formulario input .formulario,textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.formulario input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.formulario button {
+    background-color: #018b06;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+
+footer {
+  background-color: #0b7c0e;
+  color: azure;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+}
+
+footer .iconos img {
+  width: 40px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+footer .iconos .facebook:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+footer .iconos .instagram:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+footer .iconos .whatsapp:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+
+@media (min-width: 720px) {
+    section.contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .imagen, .texto, .formulario {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+  .men_nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .footer {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
